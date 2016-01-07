@@ -15,6 +15,9 @@
 		79A53A861C3D73B900748EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A53A841C3D73B900748EAF /* LaunchScreen.storyboard */; };
 		79A53A911C3D73B900748EAF /* foregroundexampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A53A901C3D73B900748EAF /* foregroundexampleTests.swift */; };
 		79A53A9C1C3D73B900748EAF /* foregroundexampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A53A9B1C3D73B900748EAF /* foregroundexampleUITests.swift */; };
+		79A53AE81C3D767B00748EAF /* ilocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A53AE71C3D767B00748EAF /* ilocky.framework */; };
+		79A53AE91C3D767B00748EAF /* ilocky.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79A53AE71C3D767B00748EAF /* ilocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79A53AEC1C3D76B000748EAF /* keylessok_ui_fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A53AEB1C3D76B000748EAF /* keylessok_ui_fail.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		79A53AEA1C3D767B00748EAF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				79A53AE91C3D767B00748EAF /* ilocky.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		79A53A751C3D73B900748EAF /* foregroundexample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foregroundexample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A53A781C3D73B900748EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +66,13 @@
 		79A53A971C3D73B900748EAF /* foregroundexampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foregroundexampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A53A9B1C3D73B900748EAF /* foregroundexampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foregroundexampleUITests.swift; sourceTree = "<group>"; };
 		79A53A9D1C3D73B900748EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A53AE71C3D767B00748EAF /* ilocky.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ilocky.framework; sourceTree = "<group>"; };
+		79A53AEB1C3D76B000748EAF /* keylessok_ui_fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keylessok_ui_fail.png; sourceTree = "<group>"; };
+		79A53AEF1C3D795400748EAF /* foregroundexample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = foregroundexample.entitlements; sourceTree = "<group>"; };
+		79A53C6B1C3E335900748EAF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		79A53C6C1C3E335900748EAF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		79A53C6D1C3E336600748EAF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		79A53C6E1C3E336600748EAF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A53AE81C3D767B00748EAF /* ilocky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +104,7 @@
 		79A53A6C1C3D73B900748EAF = {
 			isa = PBXGroup;
 			children = (
+				79A53AE71C3D767B00748EAF /* ilocky.framework */,
 				79A53A771C3D73B900748EAF /* foregroundexample */,
 				79A53A8F1C3D73B900748EAF /* foregroundexampleTests */,
 				79A53A9A1C3D73B900748EAF /* foregroundexampleUITests */,
@@ -99,6 +125,8 @@
 		79A53A771C3D73B900748EAF /* foregroundexample */ = {
 			isa = PBXGroup;
 			children = (
+				79A53AEF1C3D795400748EAF /* foregroundexample.entitlements */,
+				79A53AEB1C3D76B000748EAF /* keylessok_ui_fail.png */,
 				79A53A781C3D73B900748EAF /* AppDelegate.swift */,
 				79A53A7A1C3D73B900748EAF /* ViewController.swift */,
 				79A53A7C1C3D73B900748EAF /* Main.storyboard */,
@@ -138,6 +166,7 @@
 				79A53A711C3D73B900748EAF /* Sources */,
 				79A53A721C3D73B900748EAF /* Frameworks */,
 				79A53A731C3D73B900748EAF /* Resources */,
+				79A53AEA1C3D767B00748EAF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +225,15 @@
 				TargetAttributes = {
 					79A53A741C3D73B900748EAF = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 32HN273XZQ;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					79A53A8B1C3D73B900748EAF = {
 						CreatedOnToolsVersion = 7.2;
@@ -234,6 +272,7 @@
 			files = (
 				79A53A861C3D73B900748EAF /* LaunchScreen.storyboard in Resources */,
 				79A53A831C3D73B900748EAF /* Assets.xcassets in Resources */,
+				79A53AEC1C3D76B000748EAF /* keylessok_ui_fail.png in Resources */,
 				79A53A7E1C3D73B900748EAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +340,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				79A53A7D1C3D73B900748EAF /* Base */,
+				79A53C6B1C3E335900748EAF /* zh-Hans */,
+				79A53C6D1C3E336600748EAF /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -309,6 +350,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				79A53A851C3D73B900748EAF /* Base */,
+				79A53C6C1C3E335900748EAF /* zh-Hans */,
+				79A53C6E1C3E336600748EAF /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -403,10 +446,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = foregroundexample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilocky.foregroundexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -414,10 +465,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = foregroundexample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilocky.foregroundexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
