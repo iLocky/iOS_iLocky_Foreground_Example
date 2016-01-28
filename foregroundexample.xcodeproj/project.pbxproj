@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7907E12D1C4E6797007752DF /* ilocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7907E12B1C4E6790007752DF /* ilocky.framework */; };
+		7907E12E1C4E6797007752DF /* ilocky.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7907E12B1C4E6790007752DF /* ilocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79A53A791C3D73B900748EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A53A781C3D73B900748EAF /* AppDelegate.swift */; };
 		79A53A7B1C3D73B900748EAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A53A7A1C3D73B900748EAF /* ViewController.swift */; };
 		79A53A7E1C3D73B900748EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A53A7C1C3D73B900748EAF /* Main.storyboard */; };
@@ -15,8 +17,6 @@
 		79A53A861C3D73B900748EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A53A841C3D73B900748EAF /* LaunchScreen.storyboard */; };
 		79A53A911C3D73B900748EAF /* foregroundexampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A53A901C3D73B900748EAF /* foregroundexampleTests.swift */; };
 		79A53A9C1C3D73B900748EAF /* foregroundexampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A53A9B1C3D73B900748EAF /* foregroundexampleUITests.swift */; };
-		79A53AE81C3D767B00748EAF /* ilocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A53AE71C3D767B00748EAF /* ilocky.framework */; };
-		79A53AE91C3D767B00748EAF /* ilocky.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79A53AE71C3D767B00748EAF /* ilocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79A53AEC1C3D76B000748EAF /* keylessok_ui_fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A53AEB1C3D76B000748EAF /* keylessok_ui_fail.png */; };
 /* End PBXBuildFile section */
 
@@ -38,13 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		79A53AEA1C3D767B00748EAF /* Embed Frameworks */ = {
+		7907E12A1C4E6658007752DF /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				79A53AE91C3D767B00748EAF /* ilocky.framework in Embed Frameworks */,
+				7907E12E1C4E6797007752DF /* ilocky.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7907E12B1C4E6790007752DF /* ilocky.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ilocky.framework; sourceTree = "<group>"; };
 		79A53A751C3D73B900748EAF /* foregroundexample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foregroundexample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A53A781C3D73B900748EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79A53A7A1C3D73B900748EAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		79A53A971C3D73B900748EAF /* foregroundexampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foregroundexampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A53A9B1C3D73B900748EAF /* foregroundexampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foregroundexampleUITests.swift; sourceTree = "<group>"; };
 		79A53A9D1C3D73B900748EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79A53AE71C3D767B00748EAF /* ilocky.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ilocky.framework; sourceTree = "<group>"; };
 		79A53AEB1C3D76B000748EAF /* keylessok_ui_fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keylessok_ui_fail.png; sourceTree = "<group>"; };
 		79A53AEF1C3D795400748EAF /* foregroundexample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = foregroundexample.entitlements; sourceTree = "<group>"; };
 		79A53C6B1C3E335900748EAF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79A53AE81C3D767B00748EAF /* ilocky.framework in Frameworks */,
+				7907E12D1C4E6797007752DF /* ilocky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 		79A53A6C1C3D73B900748EAF = {
 			isa = PBXGroup;
 			children = (
-				79A53AE71C3D767B00748EAF /* ilocky.framework */,
+				7907E12B1C4E6790007752DF /* ilocky.framework */,
 				79A53A771C3D73B900748EAF /* foregroundexample */,
 				79A53A8F1C3D73B900748EAF /* foregroundexampleTests */,
 				79A53A9A1C3D73B900748EAF /* foregroundexampleUITests */,
@@ -166,7 +166,7 @@
 				79A53A711C3D73B900748EAF /* Sources */,
 				79A53A721C3D73B900748EAF /* Frameworks */,
 				79A53A731C3D73B900748EAF /* Resources */,
-				79A53AEA1C3D767B00748EAF /* Embed Frameworks */,
+				7907E12A1C4E6658007752DF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -547,6 +547,7 @@
 				79A53AA21C3D73B900748EAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79A53AA31C3D73B900748EAF /* Build configuration list for PBXNativeTarget "foregroundexampleTests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +556,7 @@
 				79A53AA51C3D73B900748EAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79A53AA61C3D73B900748EAF /* Build configuration list for PBXNativeTarget "foregroundexampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +565,7 @@
 				79A53AA81C3D73B900748EAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
