@@ -21,22 +21,30 @@ class ViewController: UIViewController,ILockyViewControllerCallback {
         ** this iLocky passport(key) generator is only for testing. it will be removed in near future.
         ********************************************************************************************/
 
-//                let passport = ILockyPassport.Builder()
-//                    .setILockyId("331d7662")
-//                    .setDeviceId(ILockyPassport.getDeviceUuid())
-//                    .setActionType(ILockyPassport.ACTION_TYPE_LOW_SECURITY_OPEN)
-//                    .setStartTime(Int64(NSDate().timeIntervalSince1970*1000))
-//                    .setEndTime(Int64(NSDate(timeIntervalSinceNow:360000).timeIntervalSince1970*1000))
-//                    .setTimes(0)
-//                    .setRevokePast(true)
-//        let passport1 = ILockyPassport.Builder()
-//            .setILockyId("bcf79e5e")
-//            .setDeviceId(ILockyPassport.getDeviceUuid())
-//            .setActionType(ILockyPassport.ACTION_TYPE_LOW_SECURITY_OPEN)
-//            .setStartTime(Int64(NSDate().timeIntervalSince1970*1000))
-//            .setEndTime(Int64(NSDate(timeIntervalSinceNow:3600000).timeIntervalSince1970*1000))
-//            .setTimes(0)
-//            .setRevokePast(true)
+        let passport = ILockyPassport.Builder()
+        .setILockyId("331d7662")
+        .setDeviceId(ILockyPassport.getDeviceUuid())
+        .setActionType(ILockyPassport.ACTION_TYPE_LOW_SECURITY_OPEN)
+        .setStartTime(Int64(NSDate().timeIntervalSince1970*1000))
+        .setEndTime(Int64(NSDate(timeIntervalSinceNow:360000).timeIntervalSince1970*1000))
+        .setTimes(0)
+        .setRevokePast(true)
+        let passport_a = ILockyPassport.Builder()
+        .setILockyId("bbee8fde")
+        .setDeviceId(ILockyPassport.getDeviceUuid())
+        .setActionType(ILockyPassport.ACTION_TYPE_LOW_SECURITY_OPEN)
+        .setStartTime(Int64(NSDate().timeIntervalSince1970*1000))
+        .setEndTime(Int64(NSDate(timeIntervalSinceNow:360000).timeIntervalSince1970*1000))
+        .setTimes(0)
+        .setRevokePast(true)
+        let passport1 = ILockyPassport.Builder()
+            .setILockyId("bcf79e5e")
+            .setDeviceId(ILockyPassport.getDeviceUuid())
+            .setActionType(ILockyPassport.ACTION_TYPE_LOW_SECURITY_OPEN)
+            .setStartTime(Int64(NSDate().timeIntervalSince1970*1000))
+            .setEndTime(Int64(NSDate(timeIntervalSinceNow:3600000).timeIntervalSince1970*1000))
+            .setTimes(0)
+            .setRevokePast(true)
 //        let passport2 = ILockyPassport.Builder()
 //            .setILockyId("10ff5d02")
 //            .setDeviceId(ILockyPassport.getDeviceUuid())
@@ -71,7 +79,8 @@ class ViewController: UIViewController,ILockyViewControllerCallback {
 //            .setRevokePast(true)
         //fan sir demo lock
         let passport6 = ILockyPassport.Builder()
-        .setILockyId("33b98f4e")
+        .setILockyId("a42514c9")
+//        .setILockyId("33b98f4e")
         .setDeviceId(ILockyPassport.getDeviceUuid())
         .setActionType(ILockyPassport.ACTION_TYPE_LOW_SECURITY_OPEN)
         .setStartTime(Int64(NSDate().timeIntervalSince1970*1000))
@@ -88,8 +97,10 @@ class ViewController: UIViewController,ILockyViewControllerCallback {
 //            .setTimes(0)
 //            .setRevokePast(true)
         /********************************************************************************************/
-//        ILockyPassport.importILockyPassport(passport, error: nil)
-//        ILockyPassport.importILockyPassport(passport1, error: nil)
+        ILockyPassport.importILockyPassport(passport, error: nil)
+        ILockyPassport.importILockyPassport(passport1, error: nil)
+//        ILockyPassport.importILockyPassport(passport2, error: nil)
+        ILockyPassport.importILockyPassport(passport_a, error: nil)
 //        ILockyPassport.importILockyPassport(passport2, error: nil)
 //        ILockyPassport.importILockyPassport(passport3, error: nil)
 //        ILockyPassport.importILockyPassport(passport4, error: nil)
@@ -106,12 +117,14 @@ class ViewController: UIViewController,ILockyViewControllerCallback {
         self.presentViewController(vc, animated: true, completion: nil)
         ILocky.iLockyViewControllerCallback=self
     }
+    func onDismiss(success: Bool) {
+        print("ILockyViewControllerDismiss")
+        print(success)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    func onDismiss(success: Bool) {
-        print("ILockyViewControllerDismiss")
     }
 
 
